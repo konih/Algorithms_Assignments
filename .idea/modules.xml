@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/week2_algorithmic_warmup/1_fibonacci_number/1_fibonacci_number.iml" filepath="$PROJECT_DIR$/src/week2_algorithmic_warmup/1_fibonacci_number/1_fibonacci_number.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/week1_programming_challenges/1_sum_of_two_digits/1_sum_of_two_digits.iml" filepath="$PROJECT_DIR$/src/week1_programming_challenges/1_sum_of_two_digits/1_sum_of_two_digits.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/week1_programming_challenges/2_maximum_pairwise_product/2_maximum_pairwise_product.iml" filepath="$PROJECT_DIR$/src/week1_programming_challenges/2_maximum_pairwise_product/2_maximum_pairwise_product.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/week1_programming_challenges/2_maximum_pairwise_product/2_maximum_pairwise_product1.iml" filepath="$PROJECT_DIR$/src/week1_programming_challenges/2_maximum_pairwise_product/2_maximum_pairwise_product1.iml" />
