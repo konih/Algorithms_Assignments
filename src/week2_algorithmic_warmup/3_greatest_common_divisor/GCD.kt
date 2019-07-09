@@ -14,11 +14,14 @@ fun gcdNaive(a: Int, b: Int): Int {
 
     return currentGcd
 }
+fun gcd(a: Int, b: Int): Int {
+    val rest = a%b;
+    return if (rest == 0) b else return gcd(b, rest)
+}
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
     val a = scanner.nextInt()
     val b = scanner.nextInt()
-
-    println(gcdNaive(a, b))
+    println(gcd(a, b))
 }
