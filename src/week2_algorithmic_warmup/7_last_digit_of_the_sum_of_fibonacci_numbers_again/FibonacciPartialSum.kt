@@ -13,7 +13,7 @@ fun getFibonacciPartialSumNaive(from: Long, to: Long): Long {
 
         val newCurrent = next
         next += current
-        current = newCurrent
+        current = newCurrent % 10
     }
 
     return sum % 10
@@ -21,7 +21,10 @@ fun getFibonacciPartialSumNaive(from: Long, to: Long): Long {
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
-    val from = scanner.nextLong()
-    val to = scanner.nextLong()
+    var from = scanner.nextLong()
+    var to = scanner.nextLong()
+    from %= 60
+    to %= 60
+    if (to < from) to += 60
     println(getFibonacciPartialSumNaive(from, to))
 }

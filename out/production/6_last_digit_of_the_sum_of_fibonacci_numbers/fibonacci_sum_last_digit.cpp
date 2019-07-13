@@ -1,6 +1,6 @@
 #include <iostream>
 
-int fibonacci_sum_squares_naive(long long n) {
+int fibonacci_sum_naive(long long n) {
     if (n <= 1)
         return n;
 
@@ -12,16 +12,14 @@ int fibonacci_sum_squares_naive(long long n) {
         long long tmp_previous = previous;
         previous = current;
         current = tmp_previous + current;
-        current %= 10;
-        sum += current * current;
-        sum %= 10;
+        sum += current;
     }
 
-    return sum;
+    return sum % 10;
 }
 
 int main() {
     long long n = 0;
     std::cin >> n;
-    std::cout << fibonacci_sum_squares_naive(n % 60);
+    std::cout << fibonacci_sum_naive(n);
 }

@@ -21,6 +21,6 @@ fun getFibonacciSumNaive(n: Long): Long {
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
     val n = scanner.nextLong()
-    val s = getFibonacciSumNaive(n)
+    val s = getFibonacciSumNaive(n%60)
     println(s)
 }
